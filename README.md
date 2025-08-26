@@ -14,8 +14,7 @@ graph LR
         C -- Returns Relevant Chunks --> F
         F -- Context --> G[2. Generator]
         E -- User Query + Context --> G
-        G -- Formats Prompt --> H[LLM API: Gemini/GPT-4]
+        G -- Formats Prompt
         H -- Synthesized Answer --> G
-        G -- Formatted Response w/ Citations --> E
         E --> D
     end
