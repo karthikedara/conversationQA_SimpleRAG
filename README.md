@@ -14,7 +14,7 @@ graph LR
         C -- Returns Relevant Chunks --> F
         F -- Context --> G[2. Generator]
         E -- User Query + Context --> G
-        G -- Formats Prompt
+        G -- Formats Prompt --> H
         H -- Synthesized Answer --> G
         E --> D
     end
